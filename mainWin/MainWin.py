@@ -1,8 +1,8 @@
 import sys, os
-from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from mainWin.MainWindow import Ui_MainWindow
+from dialogs.GetUrlDialog import URLDialog
 
 import threading
 
@@ -12,6 +12,7 @@ from recognize_from_video import *
 
 class MainWin(QMainWindow):
     datasetSelected = pyqtSignal()
+    # urlSet = pyqtSlot()
 
     def __init__(self):
         super().__init__()
@@ -22,6 +23,7 @@ class MainWin(QMainWindow):
         self.ui.logsWidget.setWidget(self.plainTextEdit)
         Logger.logWidget = self.plainTextEdit
         self.datasetPath = ''
+        self.url = ""
 
     def connectAll(self):
         self.ui.selectDatasetButton.clicked.connect(self.selectDatasetClicked)
@@ -29,6 +31,7 @@ class MainWin(QMainWindow):
         self.ui.fromImageButton.clicked.connect(self.recFromImageClicked)
         self.ui.fromVideoFileButton.clicked.connect(self.recFromVideoFileClicked)
         self.ui.fromCamButton.clicked.connect(self.recFromCamClicked)
+        self.ui.fromLiveStreamButton.clicked.connect(self.recFromLiveStreamClicked)
 
     # slots
     def selectDatasetClicked(self):
@@ -66,6 +69,15 @@ class MainWin(QMainWindow):
 
     def recFromCamClicked(self):
         FaceRecognizer.getFaceRecognizer(self).recognize_from_video()
+
+    def recFromLiveStreamClicked(self):
+        self.urldialog = URLDialog(self)
+        self.urldialog.exec_()
+
+    def urlSet(self, url):
+        self.url = url
+        FaceRecognizer.getFaceRecognizer(self).recognize_from_video(url)
+        print(url)
 
     def getDetectionMethod(self):
         detMethod = 'cnn'
