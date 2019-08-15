@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>807</width>
-    <height>561</height>
+    <width>711</width>
+    <height>588</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,11 +17,14 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>220</y>
+      <x>10</x>
+      <y>10</y>
       <width>341</width>
       <height>91</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="title">
      <string>Encoding generation</string>
@@ -33,6 +36,9 @@
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
           <widget class="QPushButton" name="selectDatasetButton">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(240, 240, 240);</string>
+           </property>
            <property name="text">
             <string>Select Dataset Folder</string>
            </property>
@@ -53,6 +59,9 @@
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
         <widget class="QPushButton" name="generateEncodingsButton">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(240, 240, 240);</string>
+         </property>
          <property name="text">
           <string>Generate</string>
          </property>
@@ -65,11 +74,14 @@
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>30</y>
+      <x>450</x>
+      <y>10</y>
       <width>120</width>
       <height>81</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="title">
      <string>Detection Method</string>
@@ -120,76 +132,94 @@
    <widget class="QGroupBox" name="groupBox_3">
     <property name="geometry">
      <rect>
-      <x>390</x>
-      <y>210</y>
+      <x>450</x>
+      <y>180</y>
       <width>181</width>
-      <height>131</height>
+      <height>141</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
     <property name="title">
-     <string/>
+     <string>Input Method</string>
     </property>
     <widget class="QPushButton" name="fromImageButton">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>10</y>
+       <y>20</y>
        <width>151</width>
        <height>23</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(240, 240, 240);</string>
+     </property>
      <property name="text">
-      <string>Recognize From Image</string>
+      <string>Image</string>
      </property>
     </widget>
     <widget class="QPushButton" name="fromVideoFileButton">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>40</y>
+       <y>50</y>
        <width>151</width>
        <height>23</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(240, 240, 240);</string>
+     </property>
      <property name="text">
-      <string>Recognize From Video File</string>
+      <string>Video File</string>
      </property>
     </widget>
     <widget class="QPushButton" name="fromCamButton">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>70</y>
+       <y>80</y>
        <width>151</width>
        <height>23</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(240, 240, 240);</string>
+     </property>
      <property name="text">
-      <string>Recognize From Web Cam</string>
+      <string>Web Cam</string>
      </property>
     </widget>
     <widget class="QPushButton" name="fromLiveStreamButton">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>100</y>
+       <y>110</y>
        <width>151</width>
        <height>23</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(240, 240, 240);</string>
+     </property>
      <property name="text">
-      <string>Recognize From Live Stream</string>
+      <string>Live Stream</string>
      </property>
     </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_4">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>10</y>
-      <width>411</width>
+      <x>10</x>
+      <y>160</y>
+      <width>371</width>
       <height>181</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="title">
      <string>Detection / Recognition parameters</string>
@@ -323,7 +353,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>807</width>
+     <width>711</width>
      <height>21</height>
     </rect>
    </property>

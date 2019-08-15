@@ -74,7 +74,7 @@ class FaceRecognizer:
 			self.process_frame(frame, detection_method=self.mainWin.getDetectionMethod())
 			end = time.time()
 
-			print("time = ", end - start)
+			Logger.log("Frame Processing Time:  " + str(end - start))
 
 			cv2.imshow("frame", frame)
 			key = cv2.waitKey(1) & 0xFF

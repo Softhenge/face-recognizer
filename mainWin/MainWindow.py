@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'MainWindow.ui'
+# Form implementation generated from reading ui file 'mainWin\mainwindow.ui'
 #
-# Created by: PyQt5 UI code generator 5.13.0
+# Created by: PyQt5 UI code generator 5.12.1
 #
 # WARNING! All changes made in this file will be lost!
-
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
@@ -13,11 +12,12 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(807, 561)
+        MainWindow.resize(711, 588)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.groupBox = QtWidgets.QGroupBox(self.centralwidget)
-        self.groupBox.setGeometry(QtCore.QRect(20, 220, 341, 91))
+        self.groupBox.setGeometry(QtCore.QRect(10, 10, 341, 91))
+        self.groupBox.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.groupBox.setObjectName("groupBox")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.groupBox)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
@@ -26,6 +26,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.selectDatasetButton = QtWidgets.QPushButton(self.groupBox)
+        self.selectDatasetButton.setStyleSheet("background-color: rgb(240, 240, 240);")
         self.selectDatasetButton.setObjectName("selectDatasetButton")
         self.horizontalLayout.addWidget(self.selectDatasetButton)
         self.datasetPathLabel = QtWidgets.QLabel(self.groupBox)
@@ -37,11 +38,13 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.generateEncodingsButton = QtWidgets.QPushButton(self.groupBox)
+        self.generateEncodingsButton.setStyleSheet("background-color: rgb(240, 240, 240);")
         self.generateEncodingsButton.setObjectName("generateEncodingsButton")
         self.horizontalLayout_2.addWidget(self.generateEncodingsButton)
         self.verticalLayout_2.addLayout(self.horizontalLayout_2)
         self.groupBox_2 = QtWidgets.QGroupBox(self.centralwidget)
-        self.groupBox_2.setGeometry(QtCore.QRect(50, 30, 120, 81))
+        self.groupBox_2.setGeometry(QtCore.QRect(450, 10, 120, 81))
+        self.groupBox_2.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.groupBox_2.setObjectName("groupBox_2")
         self.hogRadioButton = QtWidgets.QRadioButton(self.groupBox_2)
         self.hogRadioButton.setGeometry(QtCore.QRect(10, 20, 82, 17))
@@ -54,23 +57,28 @@ class Ui_MainWindow(object):
         self.cascadeRadioButton.setGeometry(QtCore.QRect(10, 60, 82, 17))
         self.cascadeRadioButton.setObjectName("cascadeRadioButton")
         self.groupBox_3 = QtWidgets.QGroupBox(self.centralwidget)
-        self.groupBox_3.setGeometry(QtCore.QRect(390, 210, 181, 131))
-        self.groupBox_3.setTitle("")
+        self.groupBox_3.setGeometry(QtCore.QRect(450, 180, 181, 141))
+        self.groupBox_3.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.groupBox_3.setObjectName("groupBox_3")
         self.fromImageButton = QtWidgets.QPushButton(self.groupBox_3)
-        self.fromImageButton.setGeometry(QtCore.QRect(10, 10, 151, 23))
+        self.fromImageButton.setGeometry(QtCore.QRect(10, 20, 151, 23))
+        self.fromImageButton.setStyleSheet("background-color: rgb(240, 240, 240);")
         self.fromImageButton.setObjectName("fromImageButton")
         self.fromVideoFileButton = QtWidgets.QPushButton(self.groupBox_3)
-        self.fromVideoFileButton.setGeometry(QtCore.QRect(10, 40, 151, 23))
+        self.fromVideoFileButton.setGeometry(QtCore.QRect(10, 50, 151, 23))
+        self.fromVideoFileButton.setStyleSheet("background-color: rgb(240, 240, 240);")
         self.fromVideoFileButton.setObjectName("fromVideoFileButton")
         self.fromCamButton = QtWidgets.QPushButton(self.groupBox_3)
-        self.fromCamButton.setGeometry(QtCore.QRect(10, 70, 151, 23))
+        self.fromCamButton.setGeometry(QtCore.QRect(10, 80, 151, 23))
+        self.fromCamButton.setStyleSheet("background-color: rgb(240, 240, 240);")
         self.fromCamButton.setObjectName("fromCamButton")
         self.fromLiveStreamButton = QtWidgets.QPushButton(self.groupBox_3)
-        self.fromLiveStreamButton.setGeometry(QtCore.QRect(10, 100, 151, 23))
+        self.fromLiveStreamButton.setGeometry(QtCore.QRect(10, 110, 151, 23))
+        self.fromLiveStreamButton.setStyleSheet("background-color: rgb(240, 240, 240);")
         self.fromLiveStreamButton.setObjectName("fromLiveStreamButton")
         self.groupBox_4 = QtWidgets.QGroupBox(self.centralwidget)
-        self.groupBox_4.setGeometry(QtCore.QRect(370, 10, 411, 181))
+        self.groupBox_4.setGeometry(QtCore.QRect(10, 160, 371, 181))
+        self.groupBox_4.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.groupBox_4.setObjectName("groupBox_4")
         self.verticalLayout_4 = QtWidgets.QVBoxLayout(self.groupBox_4)
         self.verticalLayout_4.setObjectName("verticalLayout_4")
@@ -136,7 +144,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.addLayout(self.horizontalLayout_7)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 807, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 711, 21))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -163,16 +171,19 @@ class Ui_MainWindow(object):
         self.hogRadioButton.setText(_translate("MainWindow", "HOG"))
         self.cnnRadioButton.setText(_translate("MainWindow", "CNN"))
         self.cascadeRadioButton.setText(_translate("MainWindow", "Cascade"))
-        self.fromImageButton.setText(_translate("MainWindow", "Recognize From Image"))
-        self.fromVideoFileButton.setText(_translate("MainWindow", "Recognize From Video File"))
-        self.fromCamButton.setText(_translate("MainWindow", "Recognize From Web Cam"))
-        self.fromLiveStreamButton.setText(_translate("MainWindow", "Recognize From Live Stream"))
+        self.groupBox_3.setTitle(_translate("MainWindow", "Input Method"))
+        self.fromImageButton.setText(_translate("MainWindow", "Image"))
+        self.fromVideoFileButton.setText(_translate("MainWindow", "Video File"))
+        self.fromCamButton.setText(_translate("MainWindow", "Web Cam"))
+        self.fromLiveStreamButton.setText(_translate("MainWindow", "Live Stream"))
         self.groupBox_4.setTitle(_translate("MainWindow", "Detection / Recognition parameters"))
         self.label.setText(_translate("MainWindow", "Number of times to upsample"))
         self.label_2.setText(_translate("MainWindow", "Number of jitters"))
         self.label_3.setText(_translate("MainWindow", "Tolerance"))
         self.label_4.setText(_translate("MainWindow", "Scale Factor (Cascade)"))
         self.label_5.setText(_translate("MainWindow", "Min Neighbors (Cascade)"))
+
+
 
 
 if __name__ == "__main__":
