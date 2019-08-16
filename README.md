@@ -1,5 +1,5 @@
 # face-recognizer
-The program demonstrates three most known face detection algorithms :
+The program demonstrates the three most known face detection algorithms :
 - [Histogram of Oriented Gradients (HOG) with Support Vector Machine (SVM) model](https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf)
 - [Convolutional Neural Network (CNN) based face detection](https://www.arunponnusamy.com/cnn-face-detector-dlib.html)
 - [Haar Feature based Cascade Classifier](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-cvpr-01.pdf)
@@ -18,7 +18,7 @@ The project is based on `face_recognition` library which wraps DLib facial detec
 
 ## Installation
 From the top directory run
-`pip install -r requirements.txt` to install required packages
+`pip install -r requirements.txt` to install required packages.
 
 ## Usage
 
@@ -43,9 +43,9 @@ From the top directory run
 │   │   ├── ...
 │   │   ├── n.jpg
 ```
-the directory names will be used as person name.
+the directory names will be used as person names.
 
 2. Choose the detection method, click `Select Dataset Directory`, select the root directory of the images.
-3. Click `Create List` to define the list of known people.
+3. Click `Create List` to create the list of known people.
 4. Choose one of the input options from `Input Options` section. The detection/recognition process will be started after providing valid input.
 5. You can change the detection method and adjust detection/recognition parameters at runtime.
