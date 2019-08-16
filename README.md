@@ -22,7 +22,6 @@ From the top directory run
 
 ## Usage
 
-1. To create the databese of known persons put the images of the persons which need to be recognized according to the following structure:
 1. To define the known people's set put the images according to the following structure:
 
 ```bash
