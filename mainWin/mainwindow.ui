@@ -40,7 +40,7 @@
             <string notr="true">background-color: rgb(240, 240, 240);</string>
            </property>
            <property name="text">
-            <string>Select Dataset Folder</string>
+            <string>Select Dataset Directory</string>
            </property>
           </widget>
          </item>
@@ -58,14 +58,40 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
         <widget class="QPushButton" name="generateEncodingsButton">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(240, 240, 240);</string>
          </property>
          <property name="text">
-          <string>Generate</string>
+          <string>Create List</string>
          </property>
         </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
        </item>
       </layout>
      </item>
@@ -142,7 +168,7 @@
      <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="title">
-     <string>Input Method</string>
+     <string>Input Options</string>
     </property>
     <widget class="QPushButton" name="fromImageButton">
      <property name="geometry">

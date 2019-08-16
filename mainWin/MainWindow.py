@@ -2,9 +2,10 @@
 
 # Form implementation generated from reading ui file 'mainWin\mainwindow.ui'
 #
-# Created by: PyQt5 UI code generator 5.12.1
+# Created by: PyQt5 UI code generator 5.13.0
 #
 # WARNING! All changes made in this file will be lost!
+
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
@@ -37,10 +38,14 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.addLayout(self.verticalLayout)
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem)
         self.generateEncodingsButton = QtWidgets.QPushButton(self.groupBox)
         self.generateEncodingsButton.setStyleSheet("background-color: rgb(240, 240, 240);")
         self.generateEncodingsButton.setObjectName("generateEncodingsButton")
         self.horizontalLayout_2.addWidget(self.generateEncodingsButton)
+        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem1)
         self.verticalLayout_2.addLayout(self.horizontalLayout_2)
         self.groupBox_2 = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox_2.setGeometry(QtCore.QRect(450, 10, 120, 81))
@@ -165,13 +170,13 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Face Recognizer"))
         self.groupBox.setTitle(_translate("MainWindow", "Encoding generation"))
-        self.selectDatasetButton.setText(_translate("MainWindow", "Select Dataset Folder"))
-        self.generateEncodingsButton.setText(_translate("MainWindow", "Generate"))
+        self.selectDatasetButton.setText(_translate("MainWindow", "Select Dataset Directory"))
+        self.generateEncodingsButton.setText(_translate("MainWindow", "Create List"))
         self.groupBox_2.setTitle(_translate("MainWindow", "Detection Method"))
         self.hogRadioButton.setText(_translate("MainWindow", "HOG"))
         self.cnnRadioButton.setText(_translate("MainWindow", "CNN"))
         self.cascadeRadioButton.setText(_translate("MainWindow", "Cascade"))
-        self.groupBox_3.setTitle(_translate("MainWindow", "Input Method"))
+        self.groupBox_3.setTitle(_translate("MainWindow", "Input Options"))
         self.fromImageButton.setText(_translate("MainWindow", "Image"))
         self.fromVideoFileButton.setText(_translate("MainWindow", "Video File"))
         self.fromCamButton.setText(_translate("MainWindow", "Web Cam"))
@@ -182,8 +187,6 @@ class Ui_MainWindow(object):
         self.label_3.setText(_translate("MainWindow", "Tolerance"))
         self.label_4.setText(_translate("MainWindow", "Scale Factor (Cascade)"))
         self.label_5.setText(_translate("MainWindow", "Min Neighbors (Cascade)"))
-
-
 
 
 if __name__ == "__main__":
