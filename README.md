@@ -1,4 +1,7 @@
-# face-recognizer
+# Face Recognizer
+
+![alt MainWindow](https://github.com/Softhenge/face-recognizer/blob/master/images/main_window.png)
+
 The program demonstrates the three most known face detection algorithms :
 - [Histogram of Oriented Gradients (HOG) with Support Vector Machine (SVM) model](https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf)
 - [Convolutional Neural Network (CNN) based face detection](https://www.arunponnusamy.com/cnn-face-detector-dlib.html)
